@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1656139391 source:c:\users\w\desktop\vscode\leetcode\392. is subsequence\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<typeinfo>
+	<map>
+

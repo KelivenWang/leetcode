@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1655959024 source:c:\users\w\desktop\vscode\leetcode\205. isomorphic strings\main.cpp
+	<iostream>
+	<string>
+	<typeinfo>
+
