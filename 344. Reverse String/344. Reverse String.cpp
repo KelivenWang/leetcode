@@ -1,3 +1,4 @@
+// reference https://iq.opengenus.org/reverse-vector-in-cpp-stl/#:~:text=C%2B%2B%20vectors%20support%20reverse%20iterators%20vector%3A%3Arbegin%20%28%29%20and,just%20in%20front%20of%20the%20first%20first%20element.
 #include<iostream>
 #include<algorithm>
 #include<vector>
