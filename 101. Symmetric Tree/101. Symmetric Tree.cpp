@@ -40,6 +40,9 @@ public:
 };
 
 int main(){
+    Solution solution;
+    TreeNode one(1);
+    TreeNode two(2);
     return 0;
 
 }
