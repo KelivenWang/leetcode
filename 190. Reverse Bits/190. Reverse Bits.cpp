@@ -37,7 +37,7 @@ unsigned integer 43261596, so return 964176192 which its binary representation
 is 00111001011110000010100101000000.
 */
     Solution solution;
-    uint32_t n = 43261596;
+    uint32_t n = 00000000000000000000000000001011;
     uint32_t getans;
     getans = solution.reverseBits(n);
     cout<<getans<<endl;
