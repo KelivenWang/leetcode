@@ -1,27 +1,27 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> ans;
-        int num = 0;
-        int z = 0;
+        vector<int> temp; // 暫存某個正確數組解
+        sort(nums.begin(),nums.end());
 
         for(int i=0; i<nums.size(); i++){
             for(int j=i+1; j<nums.size(); j++){
                 for(int k=j+1; k<nums.size(); k++){
+
                     if(nums[i]+nums[j]+nums[k]==0){
-                    
-                        ans[z][0] = i;
-                        ans[z][1] = j;
-                        ans[z][2] = k;
-                        z++;
+                        temp.push_back(nums[i]);
+                        temp.push_back(nums[j]);
+                        temp.push_back(nums[k]);
+                        ans.push_back(temp);
+                        temp.clear();
                     }
-                    
                 }
-                
             }
         }
 
