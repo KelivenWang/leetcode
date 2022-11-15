@@ -2,8 +2,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cpp.exe 建置使用中檔案",
-            "command": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\c++.exe",
+            "label": "C/C++: g++.exe 建置使用中檔案",
+            "command": "C:\\Users\\yoyor\\My_Download_Area\\CodeBlocks\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -21,26 +21,6 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "偵錯工具產生的工作。"
-        },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: g++.exe 建置使用中檔案",
-            "command": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\g++.exe",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
             "detail": "偵錯工具產生的工作。"
         }
     ],
