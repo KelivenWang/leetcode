@@ -1,13 +1,12 @@
 #include<iostream>
+#include<vector>
+#include <algorithm>
 using namespace std;
 
 int main(){
-    cout<<"hello vscode ssh"<<endl;
-    int a = 1;
-    for(int i=0; i<10; i++){
-        i+=1;
-        a = i;
+    vector<int> nums1 = {1,2,3};
+    for(int i=0; i<nums1.size(); i++){
+        cout<<nums1[i]<<endl;
     }
-    cout<<"a=i= "<<a<<endl;
     return 0;
 }
