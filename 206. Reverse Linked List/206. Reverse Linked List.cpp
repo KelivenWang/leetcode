@@ -3,44 +3,27 @@
 using namespace std;
 
 // Definition for singly-linked list.
- struct ListNode {
-     int val;
-     ListNode *next;
-     ListNode() : val(0), next(nullptr) {}
-     ListNode(int x) : val(x), next(nullptr) {}
-     ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
- 
-class Solution {
-public:
-    ListNode* reverseList(ListNode* head) {
-        
-        vector<int> vt;
-        
-        head = head->next;
-        while(head){
-            vt.push_back(head->val);
-            head = head->next;
-        }
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
 
-        ListNode * trail1 = new ListNode;
-        ListNode * head1 ;
-        head1 = trail1;
-        int len = vt.size()-1;
-        for(int i=len; i>=0; i--){
-            if(i==0){
-                ListNode * newnode = new ListNode;
-                trail1->val = vt[i];
-                trail1->next = newnode;
-                trail1 = newnode;
-            }else{
-                ListNode * newnode = new ListNode;
-                trail1->val = vt[i];
-                trail1->next = newnode;
-                trail1 = newnode;
-            }
+class Solution{
+public:
+    ListNode* reverseList(ListNode* head){
+        ListNode* temp;
+        ListNode* curr = head;
+        ListNode* pre = nullptr;
+        while(curr){
+            temp = curr->next; // 因為將原本的指針反轉，要先保留下一個要處理的節點
+            curr->next = pre;  // 指針翻轉
+            pre = curr; // pre指針往前
+            curr = temp; // curr指針往前
         }
-        return head1;
+        return pre;
     }
 };
 
