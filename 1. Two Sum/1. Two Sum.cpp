@@ -24,6 +24,9 @@ using namespace std;
 // };
 
 // https://medium.com/@chingyu.tung/leetcode-%E6%B6%88%E5%8C%96%E9%81%93-two-sum-%E8%A7%A3%E9%A1%8C%E7%AD%86%E8%A8%98-28f07b6dbf2
+// （一）查看它對應要找的數字是否在儲存清單中；
+// （二）如果不存在，就先將該數和其所在的 Index 存起來（未來這個數可能不是、但也可能是答案）；反之，如果對應要找的數字存在於儲存清單中，代表找到答案啦！
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
